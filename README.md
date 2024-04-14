@@ -1,2 +1,2 @@
 # game_stats
-Airflow managed game stats database
+Airflow managed Steam stats database 

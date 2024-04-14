@@ -1,5 +1,6 @@
-./clickhouse/data/*
-./apache-airflow/logs
-./apache-airflow/plugins
-./apache-airflow/config
-./apache-airflow/.*
+clickhouse/data/*
+apache-airflow/logs
+apache-airflow/plugins
+apache-airflow/config
+apache-airflow/.*
+apache-airflow/dags/__**
