@@ -4,3 +4,4 @@ apache-airflow/plugins
 apache-airflow/config
 apache-airflow/.*
 apache-airflow/dags/__**
+python/
