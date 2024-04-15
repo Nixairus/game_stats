@@ -78,7 +78,7 @@ def create_get_reviews_operator(app_id):
         op_kwargs={'app_id': app_id},
     )
 
-with DAG('get_games_reviews', default_args=default_args, schedule_interval='0 14 * * *', catchup=False) as dag:
+with DAG('get_games_reviews', default_args=default_args, schedule_interval=None, catchup=False) as dag:
     get_app_ids_operator = PythonOperator(
         task_id='get_app_ids',
         python_callable=get_app_ids_task,

@@ -57,7 +57,7 @@ def insert_top_games(top_games_list):
     connection.execute(full_insert_query)
 
 ########### DAG SETUP
-with DAG('find_top_games', default_args=default_args, schedule_interval='0 10 * * *', catchup=False) as dag:
+with DAG('find_top_games', default_args=default_args, schedule_interval=None, catchup=False) as dag:
     
     fetch_top_games_task = PythonOperator(
         task_id='api_get_top_games',

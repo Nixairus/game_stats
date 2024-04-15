@@ -90,7 +90,7 @@ def write_to_clickhouse():
     connection.execute(insert_query)
 
 
-with DAG('get_game_info', default_args=default_args, schedule_interval='0 11 * * *', catchup=False) as dag:
+with DAG('get_game_info', default_args=default_args, schedule_interval=None, catchup=False) as dag:
     fetch_and_write_task = PythonOperator(
         task_id='fetch_and_write_task',
         python_callable=write_to_clickhouse,
