@@ -1,0 +1,8 @@
+clickhouse/data/*
+apache-airflow/logs
+apache-airflow/plugins
+apache-airflow/config
+apache-airflow/.*
+apache-airflow/dags/__**
+python/
+metabase/db
